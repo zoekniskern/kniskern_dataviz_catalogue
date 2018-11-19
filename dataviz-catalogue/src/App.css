@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil|Source+Sans+Pro');
+/* 
+Blue: #00AEEF
+Orange: #F15A29
+Green: #8DC63F
+Pink: #DA1C5C
+*/
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Allerta Stencil', sans-serif;
+}
+.line {
+    /* stroke: steelblue; */
+    stroke-width: 3;
+    fill: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;  /* remove scrollbar space */
+    background: white;  /* optional: just make scrollbar invisible */
+  }
+  /* optional: show position indicator in red */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: darkolivegreen;
+  }
+
+/* unstyling list items and links */
+li {
+    list-style: none;
+}
+ul {
+    padding: 0; 
+    margin: 0;  
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: #DA1C5C;
+}
+
+/* flex box sizing */
+.flexRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px 10px 0px 10px
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+#logo {
+    height: 50px;
+}
+.header {
+    border-bottom: 1px black solid;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    top: 0;
+    position: sticky;
+    background-color: white;
+}
+
+/* About */
+.title {
+    margin-bottom: 0;
+}
+.subtitle {
+    margin-top: 0;
+}
+.about {
+    margin: 10px 10% 10px 10%;
+    padding: 10px 20px 10px 20px;
+    height: 80vh;
+    border: 3px darkolivegreen solid;
+    background-color: beige;
+}
+.why {
+    padding-right: 20px;
+}
+
+/* content */
+
+
+/* catalogue nav and chart info */
+.nav {
+    width: 25%;
+    min-width: 200px;
+    top: 81px;
+    bottom: 10px;
+    position: fixed;
+    background-color:  #8DC63F;
+    margin: -10px;    
+    overflow-y: scroll;
+}
+.navItem {
+    border-bottom: 1px solid darkolivegreen;
+    color: white;
+    padding: 10px 10px 10px 10px;
+}
+.navItem:hover {
+    background-color:  #00AEEF;
+}
+.chartinfo {
+    margin-left: 27%;
+    width: 70%;
+    /* height: 1000px; */
+}
+#chart {
+    background-color: beige;
+    border: 3px darkolivegreen solid;
+}
+.chartTitle {
+    color: #8DC63F; 
+}
+.sumtitle {
+    margin: 0;
+}
+.summary {
+    margin-left: 20px;
+}
+.markschannels {
+    margin-right: 20px;
+}

@@ -1,0 +1,163 @@
+[   {
+        "id": 1,
+        "charttype": "Bar Chart",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 2,
+        "charttype": "Line Chart",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 3,
+        "charttype": "Area Chart",
+        "marks": "line, area",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 4,
+        "charttype": "Scatterplot",
+        "marks": "point",
+        "channels": "position: vertical and horizontal, optionally: color, area",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 5,
+        "charttype": "Pie Chart",
+        "marks": "area",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 6,
+        "charttype": "Donut Chart",
+        "marks": "area",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 7,
+        "charttype": "Stacked Bar Chart",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 8,
+        "charttype": "Stacked Area Chart",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 9,
+        "charttype": "Force Directed Graph",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 10,
+        "charttype": "Chord Diagram",
+        "marks": "lines, points, areas",
+        "channels": "size, optionally: color",
+        "summary": "Chord diagrams are used to display relationships of data in matrix form. The outside circle is labelled with groupings, called nodes, that are then in turn connected by arcs, or arc connections. The arcs more readable than straight lines would be and are created with Bezier curves. The thickness of these arcs is correlated with the values of the connection it represents. Color is often used to show the directionality of the data.",
+        "analysis": "A seasoned data visualization consumer understands the significance of color,positioning, arc size and groupings within a chord diagram. Any less-informed individual would be easily confused with the amount of data being presented.",
+        "sources": ["https://datavizcatalogue.com/methods/chord_diagram.html", "https://beta.observablehq.com/@mbostock/d3-chord-diagram", "https://en.wikipedia.org/wiki/Chord_diagram"]
+    },
+    {
+        "id": 11,
+        "charttype": "Cluster",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 12,
+        "charttype": "Packed Circles",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 13,
+        "charttype": "Partition",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 14,
+        "charttype": "Tree",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 15,
+        "charttype": "Treemaps",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 16,
+        "charttype": "Maps",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 17,
+        "charttype": "Cloropleth",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    },
+    {
+        "id": 18,
+        "charttype": "Candlestick",
+        "marks": "line",
+        "channels": "position: vertical or horizontal length, optionally: color",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "analysis": "",
+        "sources": []
+    }
+]
