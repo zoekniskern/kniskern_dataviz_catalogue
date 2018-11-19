@@ -5,7 +5,7 @@
         "channels": "position: vertical or horizontal length, optionally: color",
         "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
         "analysis": "",
-        "sources": []
+        "sources": ["https://blog.logrocket.com/data-visualization-in-react-using-react-d3-c35835af16d0"]
     },
     {
         "id": 2,
@@ -73,11 +73,11 @@
     {
         "id": 9,
         "charttype": "Force Directed Graph",
-        "marks": "line",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
-        "sources": []
+        "marks": "line, point",
+        "channels": "connections, optionally: color, size",
+        "summary": "Force Directed Graphs are node and link visualizations. The graph looks at the attractive forces acting on joined nodes versus the repelling forces of nodes that do not have a connection. The end result is a springy and interactive graph.",
+        "analysis": "By the nature of how force direction works, datums form groupings by the number of and commonality of connections. These graphs can offer insights and visually assist users in detecting patterns and relationships. When used with a large network of information, this visualization can be used to tell a story. The interactivity of force directed graphs is also an additional positive quality.",
+        "sources": ["https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8", "https://bl.ocks.org/heybignick/3faf257bbbbc7743bb72310d03b86ee8", "https://medium.com/@sxywu/understanding-the-force-ef1237017d5"]
     },
     {
         "id": 10,

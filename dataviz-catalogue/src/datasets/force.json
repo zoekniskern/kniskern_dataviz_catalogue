@@ -1,0 +1,26 @@
+{
+    "nodes": [
+      {"id": "Lara Jean", "group": 1},
+      {"id": "Peter", "group": 3},
+      {"id": "Margot", "group": 1},
+      {"id": "Christine", "group": 3},
+      {"id": "Gen", "group": 1},
+      {"id": "Josh", "group": 2},
+      {"id": "Emily", "group": 3},
+      {"id": "Kitty", "group": 1},
+      {"id": "Greg", "group": 3}
+    ],
+    "links": [
+        {"source": "Lara Jean", "target": "Margot", "value": 1},
+        {"source": "Lara Jean", "target": "Kitty", "value": 1},
+        {"source": "Lara Jean", "target": "Christine", "value": 3},
+        {"source": "Lara Jean", "target": "Gen", "value": 4},
+        {"source": "Lara Jean", "target": "Josh", "value": 3},
+        {"source": "Lara Jean", "target": "Peter", "value": 4},
+        {"source": "Margot", "target": "Josh", "value": 2},
+        {"source": "Kitty", "target": "Josh", "value": 3},
+        {"source": "Christine", "target": "Gen", "value": 3},
+        {"source": "Peter", "target": "Greg", "value": 2},
+        {"source": "Gen", "target": "Emily", "value": 2}
+    ]
+}

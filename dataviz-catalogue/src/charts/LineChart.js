@@ -10,7 +10,27 @@ class LineChart extends Component {
 
     drawLineChart() {
 
-        let dataset = []
+        let dataset = [];
+        // let dataset = [
+        //     {name: Emily, lineData: 
+        //         [
+        //             {sleep: 8.875675010127162, date: 2018-04-01 00:000:00},
+        //             {sleep: 11.118854427953568, date: 2018-05-01 00:000:00},
+        //             {sleep: 8.875675010127162, date: 2018-06-01 00:000:00}
+        //         ]},
+        //     {name: Nana, lineData: 
+        //         [
+        //             {sleep: 6.298880680203134, date: 2018-04-01 00:000:00},
+        //             {sleep: 10.104478959952603, date: 2018-05-01 00:000:00},
+        //             {sleep: 4.395622588594357, date: 2018-06-01 00:000:00}
+        //         ]},
+        //     {name: Zoe, lineData: 
+        //         [
+        //             {sleep: 10.278185230166667, date: 2018-04-01 00:000:00},
+        //             {sleep: 2.5954652438753483, date: 2018-05-01 00:000:00},
+        //             {sleep: 10.983510056402753, date: 2018-06-01 00:000:00}
+        //         ]}
+        // ]
 
         for(let i = 0; i < 3; i++) {
         let lineData = []
@@ -19,6 +39,7 @@ class LineChart extends Component {
             sleep: 2 + Math.random() * 10,
             date: new Date(2018, j)
             };
+            console.log(datum.date);
             lineData.push(datum);
         }
         let datum = {
@@ -27,6 +48,8 @@ class LineChart extends Component {
         };
         dataset.push(datum);
         }
+
+        console.log(dataset);
             
         // let's use console.log with the dataset so that we can inspect
         // the values in the Javascript Console

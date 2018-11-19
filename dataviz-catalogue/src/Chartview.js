@@ -7,6 +7,9 @@ import LineChart from './charts/LineChart';
 // 4 //scatter chart
 import ScatterPlot from './charts/ScatterPlot';
 import scatterdata from './datasets/CoffeeWake.csv';
+// 9 // force directed
+import ForceDirect from './charts/ForceDirect';
+import forcedata from './datasets/test.json';
 // 10 //chord diagram
 import ChordDiagram from './charts/ChordDiagram';
 import './App.css';
@@ -26,6 +29,8 @@ class Chartview extends Component {
         return <LineChart/>;
       case 4:
         return <ScatterPlot data={scatterdata}/>;
+      case 9:
+        return <ForceDirect data={forcedata}/>;
       case 10:
         return <ChordDiagram/>;
       default:
@@ -65,7 +70,7 @@ class Chartview extends Component {
             {
               this.props.chart.sources.map(function(source){
                 //console.log(source);
-                return <a href={source}>{source}</a>;
+                return <a key={source} href={source}>{source}</a>;
               })
             }
           </div>

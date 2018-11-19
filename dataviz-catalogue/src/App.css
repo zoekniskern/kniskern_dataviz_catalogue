@@ -86,7 +86,10 @@ a:hover {
     padding: 10px 20px 10px 20px;
     height: 80vh;
     border: 3px darkolivegreen solid;
-    background-color: beige;
+    background: beige url('/assets/green_sketch.png');
+    background-size: 110%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 .why {
     padding-right: 20px;
@@ -135,3 +138,8 @@ a:hover {
 .markschannels {
     margin-right: 20px;
 }
+.edge {
+fill: none;
+stroke: #00AEEF;
+stroke-width: 3px;
+} 
