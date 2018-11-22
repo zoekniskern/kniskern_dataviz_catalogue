@@ -1,0 +1,56 @@
+{
+    "children": [
+      {
+        "name": "parent",
+        "children": [
+            {
+                "name": "child",
+                "value": 100
+            },
+            {
+                "name": "child",
+                "value": 200
+            },
+            {
+                "name": "child",
+                "value": 300
+            }
+        ]
+      },
+      {
+        "name": "parent",
+        "children": [
+            {
+                "name": "child",
+                "value": 400
+            },
+            {
+                "name": "child",
+                "value": 600
+            },
+            {
+                "name": "child",
+                "value": 100
+            }
+        ]
+      },
+      {
+        "name": "parent",
+        "children": [
+            {
+                "name": "child",
+                "value": 300
+            },
+            {
+                "name": "child",
+                "value": 400
+            },
+            {
+                "name": "child",
+                "value": 100
+            }
+        ]
+      },
+      {}
+    ]
+}

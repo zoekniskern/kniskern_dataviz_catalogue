@@ -26,6 +26,14 @@ class About extends Component {
                       <p className="subtitle">D3 is a Javascript library aimed to make it easier to create digital and interactive data visualizations. Leveraging HTML, SVG and CSS, this library can handle large datasets and complicated visuals effectively.</p>
                   </div>
                 </div>
+                <div className="flexRow column">
+                  <h3 className="title chartTitle">About this site:</h3>
+                  <p className="subtitle">This site was built with React! Change to the Catalogue page using the navigation in the top right section of this page and click on any chart you would like to view in the menu on the left. Many thanks to every d3 developer out there, this site was made possible by heavy contributions from the following sites (more specifically referenced on the individual catalogue pages):</p>
+                  <a href="https://github.com/d3/d3/wiki">D3 Documentation</a>
+                  <a href="https://datavizcatalogue.com/index.html">Data Viz Catalogue</a>
+                  <a href="http://blockbuilder.org/">Bl.ock Builder</a>
+                  <span>In-class code by Steven Yi</span>
+                </div>
               </div>
             </div>
         </div>

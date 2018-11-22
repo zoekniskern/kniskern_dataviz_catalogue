@@ -3,72 +3,72 @@
         "charttype": "Bar Chart",
         "marks": "line",
         "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
+        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels. Typically the data being displayed is sorted by some sort of category.",
+        "analysis": "Bar charts are extremely common and most individuals are taught how to read them in school. They are particularily useful because it allows multiple datums to be shown on the same scale, allowing easy comparisons of multiple values. When a large dataset it being displayed, bar charts are less effective as the size of the bars must be reduced to accomodate all the data categories, rendering them less clearly comparible.",
         "sources": ["https://blog.logrocket.com/data-visualization-in-react-using-react-d3-c35835af16d0"]
     },
     {
         "id": 2,
         "charttype": "Line Chart",
-        "marks": "line",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
-        "sources": []
+        "marks": "line, point",
+        "channels": "optionally: color",
+        "summary": "Line charts plot sequentially related points and then connect those points with lines. A single line or multiple lines can be displayed on one graph. Each point corresponds to x and y values.",
+        "analysis": "Whereas bar charts often deal with categorical data, line charts more effectively handle data related to time. Decreases and increases in values are clearly evident and can be compared. However, having more than 3-4 lines will clog the graph and trends will be less visible.",
+        "sources": ["https://datavizcatalogue.com/methods/line_graph.html"]
     },
     {
         "id": 3,
         "charttype": "Area Chart",
         "marks": "line, area",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
-        "sources": []
+        "channels": "optionally: color",
+        "summary": "An area chart is similar to a line graph, but the space between the x-axis and the line is filled in.",
+        "analysis": "This graph conveys trends of values over a specific time rather than placing value of the individual datums.",
+        "sources": ["https://datavizcatalogue.com/methods/area_graph.html"]
     },
     {
         "id": 4,
         "charttype": "Scatterplot",
         "marks": "point",
-        "channels": "position: vertical and horizontal, optionally: color, area",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
+        "channels": "position: vertical and horizontal, optionally: color, area(radius)",
+        "summary": "Scatterplots illustrate datasets as points on a graph using their variable attributes as x and y coordinates. Scatterplots are able to support series with a large amount of numerical datums.",
+        "analysis": "Scatterplots are best for attempting to show coorelations between two numerical variables as the distribution of points may indicate groups or trends. It is important to view scatterplots critically as some graphs or stories may attempt to argue that strong correlations are visible when they are actually weak or nonexistant.",
         "sources": []
     },
     {
         "id": 5,
         "charttype": "Pie Chart",
         "marks": "area",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
-        "sources": []
+        "channels": "optionally: color",
+        "summary": "Pie charts are a popular way to visualize the part and whole relationship by assigning groupings within a data series a proportional wedge of the circle (calculated in terms of the radius, and then forming a triangle with the center of the circle).",
+        "analysis": "Statistically, viewers have trouble distinguishing size differences between wedges of a pie chart so comparisons may be misleading or confusing. They require labels and legends to distinguish the sources of the data and are considered a typically overused and ineffective choice for visualizing data.",
+        "sources": ["https://datavizcatalogue.com/methods/pie_chart.html"]
     },
     {
         "id": 6,
         "charttype": "Donut Chart",
-        "marks": "area",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
-        "sources": []
+        "marks": "area/line(lenght of arc)",
+        "channels": "optionally: color",
+        "summary": "A cousin to pie charts, donut charts include and outer and inner radius, but still utilize the process of assigning groupings within a data series a proportional wedge of the circle (calculated in terms of the radius.",
+        "analysis": "Donut charts are considered much more successful than pie charts because the thinner curved segments make for an easier visual comparison. It is easier for a user to identify which sections are proportionally larger and smaller and uses less 'ink' for the data it is showing.",
+        "sources": ["https://datavizcatalogue.com/methods/donut_chart.html"]
     },
     {
         "id": 7,
         "charttype": "Stacked Bar Chart",
         "marks": "line",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
+        "channels": "position: vertical or horizontal length, color",
+        "summary": "Similar to bar charts, stacked bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels with the additional functionality that the bars themselves are divided into sections. These sections, distinguished by colors or patterns, represent different groupings within the total amount of data represented by that bar.",
         "analysis": "",
         "sources": []
     },
     {
         "id": 8,
         "charttype": "Stacked Area Chart",
-        "marks": "line",
+        "marks": "line, area",
         "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
-        "sources": []
+        "summary": "A stacked area chart is a variation of a line chart, where data series tracked at regular intervals within the same time length are shown on the same graph with their area filled in as well. The end point of one series becomes the initial point of the following one. Negative numbers cannot be shown in these charts.",
+        "analysis": "Stacked area charts are an alternative to line charts when showing multiple datasets overtime.",
+        "sources": ["https://datavizcatalogue.com/methods/stacked_area_graph.html"]
     },
     {
         "id": 9,
@@ -91,73 +91,73 @@
     {
         "id": 11,
         "charttype": "Cluster",
-        "marks": "line",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
+        "marks": "line, point",
+        "channels": "connections, optionally: color",
+        "summary": "Cluster diagrams are similar to Tree Diagrams in that they simplify hierarchical data sets into nodes (root, regular, and leaf), the datums, and leaves, the relationships between nodes. However, all leaf nodes are aligned rather than a root down alignment.",
+        "analysis": "Cluster diagrams can show connections and groupings of data when layed out but can quickly become cluttered with large datasets and too much labelling.",
         "sources": []
     },
     {
         "id": 12,
         "charttype": "Packed Circles",
-        "marks": "line",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
-        "sources": []
+        "marks": "points, optional: area",
+        "channels": "position: within certain circles, optionally: color",
+        "summary": "Considered a variation of treemaps, packed circles show heirarchy and grouping of data. Color and area can be incorporated when necessary to distinguish a correlating numerical size or categorical affiliation.",
+        "analysis": "Packed circles are aesthetically pleasing, but perform poorly under the lense of having a low ink to data ratio. A pro of this chart is the visual nesting it employs, rather than reducing heirarchy to a linear form.",
+        "sources": ["https://datavizcatalogue.com/methods/circle_packing.html"]
     },
     {
         "id": 13,
         "charttype": "Partition",
         "marks": "line",
         "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
+        "summary": "Partitions demonstrate the relation between a subset and the whole of a data series. Levels of same-height rectangles depict the measure of child subsets compared to their parents using length.",
+        "analysis": "In this dataset, the proportional relations of the subsets to the whole within a heirarchy is clearly conveyed.",
         "sources": []
     },
     {
         "id": 14,
         "charttype": "Tree",
-        "marks": "line",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
-        "sources": []
+        "marks": "line, point",
+        "channels": "connections, optionally: color",
+        "summary": "Tree diagrams simplify hierarchical data sets into nodes (root, regular, and leaf), the datums, and leaves, the relationships between nodes. Levels are aligned from the root down with each added node.",
+        "analysis": "Tree diagrams are most commonly used to show descent, classification, commons roots, and in the science and math disciplines. They are effective and concise but can become very large when applied to lengthy data series.",
+        "sources": ["https://datavizcatalogue.com/methods/tree_diagram.html"]
     },
     {
         "id": 15,
         "charttype": "Treemaps",
-        "marks": "line",
+        "marks": "area",
         "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
+        "summary": "Treemaps are another type of chart focusing on depicting heirarchical relationships. Whereas Partitions use only the x dimension to show comparative size, treemaps leverage both the x and y, showing relative areas and then dividing those areas porportionally for any children.",
+        "analysis": "Although they do not convey exact values, treemaps are susinct ways to visualize parent-child heirarchies and their measurable values, if applicable.",
         "sources": []
     },
     {
         "id": 16,
         "charttype": "Maps",
-        "marks": "line",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
-        "sources": []
+        "marks": "points",
+        "channels": "position: in relation to the map, optionally: color, size",
+        "summary": "Some datasets link datums to locations. Placing points on a generated map as either one-to-one or one-to-many, data is shown.",
+        "analysis": "Maps are a great way to show location based data, and can show clear correlations between geographic areas and variables. It is more effective in showing patterns rather than exact values.",
+        "sources": ["https://datavizcatalogue.com/methods/dot_map.html"]
     },
     {
         "id": 17,
         "charttype": "Cloropleth",
-        "marks": "line",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
-        "sources": []
+        "marks": "color",
+        "channels": "",
+        "summary": "Cloropleth Maps are another way to display location based data. Geographical regions are colored to indicate certain attributes related to that location. Often a color progression is used to signify the location of that area in relation to a scale of a value.",
+        "analysis": "Color intensity is not statistically a very effective form of conveying scales of values as it may be difficult for users to distinguish between colors but are typically aesthetically pleasing.",
+        "sources": ["https://datavizcatalogue.com/methods/choropleth.html"]
     },
     {
         "id": 18,
         "charttype": "Candlestick",
         "marks": "line",
-        "channels": "position: vertical or horizontal length, optionally: color",
-        "summary": "Bar charts use horizontal or vertical bars to display data that is correlated with x and y axis labels.",
-        "analysis": "",
-        "sources": []
+        "channels": "position: vertical length and horizontal length, optionally: color",
+        "summary": "Candlestick charts are able to condense the opening and closing price and the lighest and lowest price in a single symbol placed on an x & y graph. THe symbols represent what is known as the 'compressed trading activity' for a certain time period, with the rectangle indicating the range of open and close prices, and the line showing the difference between the highest and lowest price traded.",
+        "analysis": "Candlestick charts do well in terms of the ink to data ratio, but do require some prior knowledge and understanding to interpret the trends and data presented. Their weakness is a lack of context about the status of trading when the data was collected.",
+        "sources": ["https://datavizcatalogue.com/methods/candlestick_chart.html"]
     }
 ]

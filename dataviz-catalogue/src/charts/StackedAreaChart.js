@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import * as d3 from "d3";
 
-class LineChart extends Component {
+class StackedAreaChart extends Component {
 
     //display chart after BarChart has been mounted to the DOM
     componentDidMount() {
-        this.drawLineChart();
+        this.drawBarChart();
     }
 
-    drawLineChart() {
+    drawBarChart() {
 
         let parseDate = d3.timeParse("%Y-%m-%d");
         let key = d => d.date;
@@ -22,7 +22,7 @@ class LineChart extends Component {
             }
         }).then((dataset) => {
 
-            console.log(dataset);
+            //console.log(dataset);
         // sort by date ascending
             dataset.sort((a, b) => a.date - b.date);
     
@@ -36,6 +36,10 @@ class LineChart extends Component {
                         .attr('width', w)   // setup width and height of svg to start
                         .attr('height', h); 
 
+            // create a scale for x-axis: use time for the date data variable
+            // set the end to be the day after the last date, which is hard
+            // coded here, so that the far right end of the scale is going to
+            // allow the last day within the data set to show within the range
             let xScale = d3
                 .scaleTime()
                 .domain([d3.min(dataset, d => d.date), parseDate("2018-10-02")])
@@ -48,55 +52,40 @@ class LineChart extends Component {
 
             // create our x-axis and customize look with .ticks() and
             // .tickFormat()
-            let xAxis = d3.axisBottom(xScale)
+            let xAxis = d3
+                .axisBottom(xScale)
                 .ticks(dataset.length + 1)
                 .tickFormat(d3.timeFormat("%a"));
-
-            let xAxisGroup = svg.append("g")
+            let xAxisGroup = svg
+                .append("g")
                 .attr("transform", `translate(0, ${h - 20})`)
                 .call(xAxis);
 
             let yAxis = d3.axisLeft(yScale);
-            let yAxisGroup = svg.append("g")
+            let yAxisGroup = svg
+                .append("g")
                 .attr("transform", `translate(30, 0)`)
                 .call(yAxis);
-            
-            var colors = d3.scaleOrdinal()
-                .domain(["moss", "dreary", "aqua"])
-                .range(["#DA1C5C", "#F15A29" , "#00AEEF"]);
-            
+
             /* LINE CHART CODE */
-
-            // draw the lines using SVG path elements
-            // You should use one .selectAll(), .data(), .enter() sequence
-            // here to generate all of your lines
-
-            let line = d3.line()
+            // build a D3 line generator 
+            let area = d3.area()
                 .x(d => xScale(d.date))
-                .y(d => yScale(d.sleep));
+                .y0(d => yScale(d.sleep))
+                .y1(yScale.range()[0]);
 
             // draw the line using a path
             svg.append('path')
                 .datum(dataset)
-                .attr('class', 'linechart')
-                .attr('d', line);
-                    
-            // draw circles at the points to emphasize 
-            svg.selectAll('.dot')
-                .data(dataset, key)
-                .enter()
-                .append("circle")
-                .attr("cx", d => xScale(d.date))
-                .attr("cy", d => yScale(d.sleep))
-                .attr('r', 5)
-                .style("fill", '#F15A29');
+                .attr('class', 'area')
+                .attr('d', area);
         })
     }
 
     render(){
-        return <div id='#linechart'></div>
+        return <div id="stackedareachart"></div>
     }
 
 }
 
-export default LineChart;
+export default StackedAreaChart;

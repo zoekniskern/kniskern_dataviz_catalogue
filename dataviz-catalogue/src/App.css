@@ -15,11 +15,7 @@ body{
 h1, h2, h3, h4, h5 {
     font-family: 'Allerta Stencil', sans-serif;
 }
-.line {
-    /* stroke: steelblue; */
-    stroke-width: 3;
-    fill: none;
-}
+
 
 ::-webkit-scrollbar {
     width: 5px;  /* remove scrollbar space */
@@ -143,3 +139,28 @@ fill: none;
 stroke: #00AEEF;
 stroke-width: 3px;
 } 
+.line {
+    /* stroke: steelblue; */
+    stroke-width: 3;
+    fill: none;
+}
+.linechart {
+    fill: none;
+    stroke: #F15A29;
+    stroke-width: 3px;
+}
+.area {
+    fill: #F15A29;
+    stroke: #F15A29;
+    stroke-width: 2px;
+}
+.node {
+    fill: #8DC63F;
+  }  
+.link {
+    stroke:#DA1C5C;
+    stroke-width: 2px;
+} 
+.node-label {
+    font-size: .75em;
+}
